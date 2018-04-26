@@ -1,0 +1,37 @@
+package swing.cn;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/*
+ * 标签组件 JLable
+ *  用于展示信息的
+ */
+public class Test2 {
+	public static void main(String[] args) {
+		//新建一个容器jf对象
+		JFrame jf = new JFrame("第一个swing窗体");
+		//新建一个标签对象 jl
+		JLabel jl = new JLabel("hello!!", JLabel.CENTER);
+	     //向容器中加入组件
+		  jf.add(jl);
+		  Dimension di = new Dimension();
+		  //设置窗体大小  
+		  di.setSize(500, 300);
+		  jf.setSize(di);
+	      //设置窗体的背景颜色
+	       jf.setBackground(Color.black);
+	        //设置组件的位置
+	       Point p = new Point(300, 200);
+	        jf.setLocation(p);
+	        //显示或者影藏组件
+	        jf.setVisible(true);
+		}
+
+	}
+
+
